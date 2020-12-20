@@ -4,7 +4,7 @@ from flask_oidc import OpenIDConnect
 app = Flask(__name__)
 app.config.update({
     'SECRET_KEY': 'SomethingNotEntirelySecret',
-    'OIDC_CLIENT_SECRETS': './client_secrets.json',
+    'OIDC_CLIENT_SECRETS': './client_secrets.json.dist',
     'OIDC_ID_TOKEN_COOKIE_SECURE': False,
     'OIDC_SCOPES': ["openid", "profile", "email"],
     'OIDC_CALLBACK_ROUTE': '/authorization-code/callback'
